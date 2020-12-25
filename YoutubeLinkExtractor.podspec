@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.social_media_url   = "https://www.linkedin.com/in/conglesolutionx/"
 
   spec.platform     = :ios, "10.0"
-  spec.source       = { :path => '.' }
+  spec.source       = { :git => "https://github.com/CongLeSolutionX/YoutubeLinkExtractor", :tag => "1.0.0" }
   spec.source_files = "YoutubeLinkExtractor"
   spec.framework  = "YoutubeDirectLinkExtractor"
   spec.swift_version = "5.0"
