@@ -1,0 +1,33 @@
+//
+//  Errors.swift
+//  YoutubeLinkExtractor
+//
+//  Created by Cong Le on 12/24/20.
+//
+
+import Foundation
+
+enum Error: String, LocalizedError {
+    case cantExtractVideoId = "Couldn't extract video id from the url"
+    case cantConstructRequestUrl = "Couldn't construct URL for youtube info request"
+    case noDataInResponse = "No data in youtube info response"
+    case cantConvertDataToString = "Couldn't convert response data to string"
+    case cantExtractURLFromYoutubeResponse = "Couldn't extract url from youtube response"
+    case unkown = "Unknown error occured"
+    
+    var errorDescription: String? {
+        return self.rawValue
+    }
+}
+
+struct YoutubeError: LocalizedError {
+    var errorDescription: String?
+    
+    init?(errorDescription: String?) {
+        guard let errorDescription = errorDescription else {
+            return nil
+        }
+        
+        self.errorDescription = errorDescription
+    }
+}
