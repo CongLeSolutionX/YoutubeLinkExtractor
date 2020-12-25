@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios, "10.0"
   spec.source       = { :git => "https://github.com/CongLeSolutionX/YoutubeLinkExtractor", :tag => "1.0.0" }
-  spec.source_files = "YoutubeLinkExtractor"
+  spec.source_files = "Source"
   spec.framework  = "YoutubeDirectLinkExtractor"
   spec.swift_version = "5.0"
 
